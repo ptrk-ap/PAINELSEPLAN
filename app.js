@@ -20,8 +20,8 @@ app.use((req, res, next) => {
 });
 
 // Configuração
-const API_USER = "TISEPLANFLEX";
-const API_PASS = "CEldQF"
+const API_USER = process.env.API_USER;
+const API_PASS = process.env.API_PASS;
 const API_URL = process.env.API_URL;
 
 let cachedToken = null;
